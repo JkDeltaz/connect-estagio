@@ -4,43 +4,60 @@ O **ConnectEstágio** é uma aplicação web desenvolvida para simplificar a con
 
 ---
 
-## 📌 Sobre o Projeto
+## 🎨 Protótipo do Projeto
+Você pode visualizar o design da interface e o fluxo do usuário através do link abaixo:
+> 🔗 **[Link para o Protótipo no Figma](https://www.figma.com/file/seu-link-aqui)**
 
-Este projeto foi concebido para ser uma solução leve e funcional, utilizando tecnologias fundamentais da web para garantir performance e facilidade de manutenção em um ambiente de Front-end puro.
+---
+
+## 📌 Sobre o Projeto
+Este projeto foi concebido para ser uma solução funcional utilizando tecnologias fundamentais da web para garantir performance e facilidade de manutenção em um ambiente de Front-end puro.
 
 ### Principais Funcionalidades
-* **Para Candidatos:** Cadastro de perfil acadêmico, busca inteligente de vagas e aplicação com um clique.
-* **Para Empresas:** Publicação de oportunidades, gestão de candidatos inscritos e controle de status das vagas.
-* **Filtros Avançados:** Filtragem por modalidade (Remoto/Presencial), curso e palavras-chave.
+* **Para Candidatos:** Cadastro de perfil acadêmico, busca de vagas e aplicação rápida.
+* **Para Empresas:** Publicação de oportunidades e gestão de candidatos inscritos.
+* **Filtros Avançados:** Busca por modalidade (Remoto/Presencial), curso e palavras-chave.
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
-
-O projeto foi construído utilizando o trio fundamental do desenvolvimento Web:
-
-* **HTML5:** Estruturação semântica do conteúdo.
-* **CSS3:** Estilização moderna com Flexbox e Grid para responsividade.
-* **JavaScript (ES6+):** Lógica de manipulação do DOM, filtragem dinâmica e persistência via `localStorage`.
+* **HTML5:** Estruturação semântica.
+* **CSS3:** Estilização moderna com Flexbox e Grid.
+* **JavaScript (ES6+):** Lógica de manipulação do DOM e persistência via `localStorage`.
 
 ---
 
-## 📋 Backlog do Produto
+## 📋 Backlog do Produto (Sprints)
 
-Abaixo está a organização das funcionalidades divididas por épicos e prioridades:
+O desenvolvimento está dividido em 3 Sprints focadas na entrega de valor incremental:
 
-| Épico | ID | História de Usuário (User Story) | Status |
-| :--- | :---: | :--- | :---: |
-| **Gestão de Contas** | US01 | Como candidato, quero me cadastrar com curso e semestre para que empresas me vejam. | ⏳ Pendente |
-| **Gestão de Contas** | US02 | Como empresa, quero criar um perfil institucional com descrição e setor. | ⏳ Pendente |
-| **Gestão de Contas** | US03 | Como usuário, quero realizar login para acessar as áreas restritas do sistema. | ⏳ Pendente |
-| **Painel da Empresa** | US04 | Como empresa, quero publicar vagas com requisitos, bolsa e carga horária. | ⏳ Pendente |
-| **Painel da Empresa** | US05 | Como empresa, quero visualizar a lista de candidatos inscritos em cada vaga. | ⏳ Pendente |
-| **Painel da Empresa** | US06 | Como empresa, quero encerrar uma vaga após finalizar o processo seletivo. | ⏳ Pendente |
-| **Candidato** | US07 | Como candidato, quero buscar vagas por palavras-chave ou curso. | ⏳ Pendente |
-| **Candidato** | US08 | Como candidato, quero filtrar vagas por modalidade (Remoto ou Presencial). | ⏳ Pendente |
-| **Candidato** | US09 | Como candidato, quero me candidatar a uma vaga e receber confirmação visual. | ⏳ Pendente |
-| **Interface (UI/UX)** | US10 | Como usuário, quero que o site seja responsivo para acesso via celular. | ⏳ Pendente |
+### 🏃 Sprint 1: Base e Autenticação (MVP)
+*Foco: Estrutura inicial e acesso do usuário.*
+
+| ID | História de Usuário (User Story) | Prioridade |
+| :--- | :--- | :---: |
+| **US01** | Como usuário, quero realizar login para acessar as áreas restritas do sistema. | Alta |
+| **US02** | Como candidato, quero me cadastrar com curso e semestre para que empresas me vejam. | Alta |
+| **US03** | Como empresa, quero criar um perfil institucional com descrição e setor. | Média |
+
+### 🏃 Sprint 2: Core de Vagas (Empresa & Candidato)
+*Foco: O fluxo principal de publicação e visualização.*
+
+| ID | História de Usuário (User Story) | Prioridade |
+| :--- | :--- | :---: |
+| **US04** | Como empresa, quero publicar vagas com requisitos, bolsa e carga horária. | Alta |
+| **US05** | Como candidato, quero visualizar um feed de vagas atualizado em tempo real. | Alta |
+| **US06** | Como candidato, quero me candidatar a uma vaga e receber confirmação visual. | Alta |
+| **US07** | Como empresa, quero visualizar a lista de candidatos inscritos em cada vaga. | Média |
+
+### 🏃 Sprint 3: Refinamento e Filtros
+*Foco: Experiência do usuário e busca avançada.*
+
+| ID | História de Usuário (User Story) | Prioridade |
+| :--- | :--- | :---: |
+| **US08** | Como candidato, quero buscar/filtrar vagas por modalidade (Remoto ou Presencial). | Média |
+| **US09** | Como empresa, quero encerrar uma vaga após finalizar o processo seletivo. | Baixa |
+| **US10** | Como usuário, quero que o site seja responsivo para acesso via celular. | Alta |
 
 ---
 
@@ -55,7 +72,7 @@ Abaixo está a organização das funcionalidades divididas por épicos e priorid
     cd connect-estagio
     ```
 3.  **Abra o arquivo no navegador:**
-    Basta abrir o arquivo `index.html` em seu navegador de preferência ou utilizar a extensão **Live Server** no VS Code.
+    Basta abrir o arquivo `index.html` na raiz do projeto ou utilizar a extensão **Live Server** no VS Code.
 
 ---
 
@@ -63,12 +80,16 @@ Abaixo está a organização das funcionalidades divididas por épicos e priorid
 
 ```text
 /
-├── index.html          # Página principal (Home e Login)
-├── dashboard.html      # Painel administrativo (Candidato/Empresa)
-├── /css
-│   └── style.css       # Estilização global e regras de responsividade
-├── /js
-│   ├── main.js         # Lógica de renderização e filtros
-│   ├── auth.js         # Simulação de login e níveis de acesso
-│   └── storage.js      # Funções para salvar/ler dados do localStorage
-└── /assets             # Imagens, ícones e logotipos
+├── index.html              # Landing Page / Entrada
+├── pages/                  # Telas internas
+│   ├── dashboard-aluno.html
+│   ├── dashboard-empresa.html
+│   └── vagas.html
+├── css/
+│   ├── global.css          
+│   └── components.css      
+├── js/
+│   ├── main.js             
+│   ├── auth.js             
+│   └── storage.js          # Lógica de LocalStorage
+└── assets/                 # Imagens e ícones

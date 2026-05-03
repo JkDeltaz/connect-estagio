@@ -6,7 +6,7 @@ O **ConnectEstágio** é uma aplicação web desenvolvida para simplificar a con
 
 ## 🎨 Protótipo do Projeto
 Você pode visualizar o design da interface e o fluxo do usuário através do link abaixo:
-> 🔗 **[Link para o Protótipo no Figma]([https://www.figma.com/make/uD73VtTBI0BMSash4qzQfY/ConnectEst%C3%A1gio-UI-Design?fullscreen=1&t=IDhqOun5UGMTkQde-1])**
+> 🔗 **[Link para o Protótipo no Figma](https://www.figma.com/make/uD73VtTBI0BMSash4qzQfY/ConnectEst%C3%A1gio-UI-Design?fullscreen=1&t=IDhqOun5UGMTkQde-1])**
 
 ---
 

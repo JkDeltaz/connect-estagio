@@ -6,7 +6,7 @@ O **ConnectEstágio** é uma aplicação web desenvolvida para simplificar a con
 
 ## 🎨 Protótipo do Projeto
 Você pode visualizar o design da interface e o fluxo do usuário através do link abaixo:
-> 🔗 **[Link para o Protótipo no Figma](https://www.figma.com/file/seu-link-aqui)**
+> 🔗 **[Link para o Protótipo no Figma]([https://www.figma.com/file/seu-link-aqui](https://www.figma.com/make/uD73VtTBI0BMSash4qzQfY/ConnectEst%C3%A1gio-UI-Design?fullscreen=1&t=IDhqOun5UGMTkQde-1))**
 
 ---
 
@@ -23,7 +23,10 @@ Este projeto foi concebido para ser uma solução funcional utilizando tecnologi
 ## 🛠️ Tecnologias Utilizadas
 * **HTML5:** Estruturação semântica.
 * **CSS3:** Estilização moderna com Flexbox e Grid.
-* **JavaScript (ES6+):** Lógica de manipulação do DOM e persistência via `localStorage`.
+* **JavaScript (ES6+):** Lógica de manipulação do DOM.
+* **React (JavaScript):** Construção de interfaces reativas baseadas em componentes.
+* **Vite:** Ferramenta de build rápida para desenvolvimento moderno.
+* **Tailwind CSS:** Framework utilitário para estilização ágil e responsiva.
 
 ---
 
@@ -79,23 +82,3 @@ O desenvolvimento está dividido em 3 Sprints focadas na entrega de valor increm
     ```bash
     npm run dev
     ```
-
----
-
-## 🏗️ Estrutura de Arquivos
-
-```text
-/
-├── index.html              # Landing Page / Entrada
-├── pages/                  # Telas internas
-│   ├── dashboard-aluno.html
-│   ├── dashboard-empresa.html
-│   └── vagas.html
-├── css/
-│   ├── global.css          
-│   └── components.css      
-├── js/
-│   ├── main.js             
-│   ├── auth.js             
-│   └── storage.js          # Lógica de LocalStorage
-└── assets/                 # Imagens e ícones

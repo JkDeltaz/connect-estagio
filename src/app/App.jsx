@@ -5,16 +5,16 @@ import { EstudanteDashboard } from './components/EstudanteDashboard';
 import { EmpresasPage } from './components/EmpresasPage';
 
 export default function App() {
-  const [userType, setUserType] = useState(null);
+  const [currentUser, setCurrentUser] = useState(null);
   const [currentPage, setCurrentPage] = useState('login');
 
-  const handleLogin = (type) => {
-    setUserType(type);
+  const handleLogin = (user) => {
+    setCurrentUser(user);
     setCurrentPage('dashboard');
   };
 
   const handleLogout = () => {
-    setUserType(null);
+    setCurrentUser(null);
     setCurrentPage('login');
   };
 
@@ -30,15 +30,19 @@ export default function App() {
     return <LoginCadastro onLogin={handleLogin} />;
   }
 
-  if (userType === 'empresa') {
-    return <EmpresaDashboard onLogout={handleLogout} />;
+  if (!currentUser) {
+    return <LoginCadastro onLogin={handleLogin} />;
   }
 
-  if (userType === 'estudante') {
+  if (currentUser.userType === 'empresa') {
+    return <EmpresaDashboard currentUser={currentUser} onLogout={handleLogout} />;
+  }
+
+  if (currentUser.userType === 'estudante') {
     if (currentPage === 'empresas') {
-      return <EmpresasPage onNavigate={handleNavigate} onLogout={handleLogout} />;
+      return <EmpresasPage currentUser={currentUser} onNavigate={handleNavigate} onLogout={handleLogout} />;
     }
-    return <EstudanteDashboard onNavigate={handleNavigate} onLogout={handleLogout} />;
+    return <EstudanteDashboard currentUser={currentUser} onNavigate={handleNavigate} onLogout={handleLogout} />;
   }
 
   return <LoginCadastro onLogin={handleLogin} />;
